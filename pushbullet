@@ -1,0 +1,14 @@
+#!/bin/sh
+# Script for sending notifications to phone and Chrome with pushbullet
+
+TITLE=$1
+BODY=$2
+APIKEY="YOUR_API_KEY"
+
+if [ "$1" = "" -o  "$2" = "" ] ; then
+    echo "Use: pushbullet \"Message Title\" \"Message Body\""
+    exit 1
+fi
+
+curl -s -u $APIKEY: https://api.pushbullet.com/v2/pushes -d type=note -d title="$TITLE" -d body="$BODY"
+echo
