@@ -6,4 +6,4 @@ Quick &amp; dirty script to send pushbullet notifications from the command line
 `wget https://raw.githubusercontent.com/danteali/Pushbullet/master/pushbullet -O /usr/bin/pushbullet`
 * Edit script and add your API key - get from Pushbullet website
 * Make executable: `chmod +x /usr/bin/pushbullet`
-* Run: `./pushbullet "Test Message Title" "This is the message body"`
+* Run: `pushbullet "Test Message Title" "This is the message body"`
